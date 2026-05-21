@@ -1,7 +1,7 @@
 # LociMiner
 A pipeline to maximise data recovery from next generation sequencing data.
 File and script set up for Loci Miner mapping/assembly (LM) and concatenation scripts (CW).
-The scripts for this pipeline are currently set up to run as a batch jobs on slurm, a few tweaks to paths and directories should enable them to run locally on personal machines. Based on Legacy Miner. 
+The scripts for this pipeline are currently set up to run as batch jobs on slurm, a few tweaks to paths and directories should enable them to run locally on personal machines. Based on Legacy Miner. 
 
 **Part one** **- Trimming, mapping and removing soft clip annotations from your reads**
 
@@ -16,7 +16,7 @@ The scripts for this pipeline are currently set up to run as a batch jobs on slu
 
 **Reference file** - gene/whole chloroplast sequences of a single species of the family.
 
-**settings.cfg** - file that gives PRM.sh the location of your raw data, reference file, python script, adapter file for trimming and whether or not your samples need to be trimmed.
+**settings.cfg** - file that gives LM.sh the location of your raw data, reference file, python script, adapter file for trimming and whether or not your samples need to be trimmed.
 
 **soft2match.py** - a python script that converts soft clipped reads in the mapped bam output from bowtie2 into matched/mismatched reads.
 
