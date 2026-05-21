@@ -1,6 +1,7 @@
 # LociMiner
 A pipeline to maximise data recovery from next generation sequencing data.
 File and script set up for Loci Miner (LM) mapping/assembly (PRM) and concatenation scripts (CW).
+The scripts for this pipeline are currently set up to run as a batch jobs on slurm, a few tweaks to paths and directories should enable them to run locally on personal machines. 
 
 **Part one** **- Trimming, mapping and removing soft clip annotations from your reads**
 
