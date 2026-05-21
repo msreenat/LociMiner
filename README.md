@@ -50,7 +50,7 @@ Replace loci with the name of the loci
 **Legacy data** - previously existing alignments for the family, split into the individual loci with each species and file having the suffix *_loci. The package AMAS can be used to split an alignmnet based on the loci as long as the lengths and locations of these loci are known (partitions).
 
 This command built into a script will allow you to add loci tags to the headers of each species in a fasta file -
-"sed '/^>/s/$/_matK/g' Mega_matK.fasta > New_Mega_matK.fas"
+"sed '/^>/s/$/_loci/g' Mega_loci.fasta > New_Mega_loci.fas"
 
 The output of CW.sh will be an aligned multifasta that will hold new and old samples. It is worth manually checking the alignment.
 
