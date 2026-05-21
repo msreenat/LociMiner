@@ -1,14 +1,14 @@
 # LociMiner
 A pipeline to maximise data recovery from next generation sequencing data.
-File and script set up for Loci Miner (LM) mapping/assembly (PRM) and concatenation scripts (CW).
-The scripts for this pipeline are currently set up to run as a batch jobs on slurm, a few tweaks to paths and directories should enable them to run locally on personal machines. 
+File and script set up for Loci Miner mapping/assembly (LM) and concatenation scripts (CW).
+The scripts for this pipeline are currently set up to run as a batch jobs on slurm, a few tweaks to paths and directories should enable them to run locally on personal machines. Based on Legacy Miner. 
 
 **Part one** **- Trimming, mapping and removing soft clip annotations from your reads**
 
-**Requirements** - PRM.sh script, settings.sh script, raw data, reference file, adapters file (NEBNext-PE.fa), soft2match.py, SamplesFileNames.txt
+**Requirements** - LM.sh script, settings.sh script, raw data, reference file, adapters file (NEBNext-PE.fa), soft2match.py, SamplesFileNames.txt
 **Package requirements** - Trimmomatic, Bowtie2, Samtools
 
-**PRM.sh** - script file that will trim and map samples in a loop
+**LM.sh** - script file that will trim and map samples in a loop
 
 **Raw data** - data with file names appended by *_R1.fq.gz and *_R2.fq.gz
 
@@ -20,7 +20,7 @@ The scripts for this pipeline are currently set up to run as a batch jobs on slu
 
 **soft2match.py** - a python script that converts soft clipped reads in the mapped bam output from bowtie2 into matched/mismatched reads.
 
-Editing the settings.cfg file - this tells your script file PRM.sh where your raw data, reference file, and python script are. This is also where you tell the script if the samples need trimming or not.
+Editing the settings.cfg file - this tells your script file LM.sh where your raw data, reference file, and python script are. This is also where you tell the script if the samples need trimming or not.
 
 The bam outputs from soft2match.py have the sample names appended by _nosoft.bam.
 
