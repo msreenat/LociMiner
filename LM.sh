@@ -6,11 +6,11 @@
 #SBATCH --error=PRM.%j.err
 #SBATCH --partition=long
 
-#    Plastid Region Miner (PRM) #
-# Madhavi Sreenath, Flavia Pezzini and Hannah Wilson #
+#    Loci Miner (LM) #
+# Madhavi Sreenath, Flavia Fonseca Pezzini, and Hannah P Wilson #
 
 #Complete path and set configuration for selected location
-	echo -e "\nPlastid Region Miner is running on Gruffalo...\n"
+	echo -e "\nLoci Miner is running on Gruffalo...\n"
 
 # Load settings from settings.cfg
 . ~/path/to/directory/settings.cfg
@@ -106,4 +106,4 @@ cp *_nosoft.bam ~/path/to/directory
 
 echo "\nMove to Geneious ....n\"
 
-echo "\nPlastid Region Miner for Whole Genome Sequencing part one is complete...n\"
+echo "\nLoci Miner for next generation sequencing data part one is complete...n\"
