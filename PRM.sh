@@ -7,7 +7,7 @@
 #SBATCH --partition=long
 
 #    Plastid Region Miner (PRM) #
-#        Madhavi Sreenath       #
+# Madhavi Sreenath, Flavia Pezzini and Hannah Wilson #
 
 #Complete path and set configuration for selected location
 	echo -e "\nPlastid Region Miner is running on Gruffalo...\n"
