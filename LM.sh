@@ -7,7 +7,7 @@
 #SBATCH --partition=long
 
 #    Loci Miner (LM) #
-# Madhavi Sreenath, Flavia Fonseca Pezzini, and Hannah P Wilson #
+# Madhavi Sreenath, Mark Hughes, Flavia Fonseca Pezzini, and Hannah P Wilson #
 
 #Complete path and set configuration for selected location
 	echo -e "\nLoci Miner is running on Gruffalo...\n"
